@@ -1,0 +1,1402 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="SJMSOM Admissions Process">
+  <meta name="theme-color" content="#ffffff">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="robots" content="index, follow">
+
+  <!-- Performance optimization: Preload critical resources -->
+  <link rel="preload" href="https://cdn.tailwindcss.com" as="script">
+  <link rel="preload"
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Montserrat:wght@400;500;600;700&display=swap"
+    as="style">
+
+  <!-- {headerScripts} -->
+
+  <!-- Core CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: {
+              50: '#f8f8f8',
+              100: '#e8e8e8',
+              200: '#d3d3d3',
+              300: '#a3a3a3',
+              400: '#737373',
+              500: '#525252',
+              600: '#404040',
+              700: '#262626',
+              800: '#171717',
+              900: '#0a0a0a',
+              950: '#030303',
+            },
+            secondary: {
+              50: '#f8f8f8',
+              100: '#e8e8e8',
+              200: '#d3d3d3',
+              300: '#a3a3a3',
+              400: '#737373',
+              500: '#525252',
+              600: '#404040',
+              700: '#262626',
+              800: '#171717',
+              900: '#0a0a0a',
+              950: '#030303',
+            },
+            accent: {
+              50: '#f8f8f8',
+              100: '#e8e8e8',
+              200: '#d3d3d3',
+              300: '#a3a3a3',
+              400: '#737373',
+              500: '#525252',
+              600: '#404040',
+              700: '#262626',
+              800: '#171717',
+              900: '#0a0a0a',
+              950: '#030303',
+            },
+          },
+          fontFamily: {
+            sans: ['Inter', 'system-ui', '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'Helvetica Neue', 'Arial', 'sans-serif'],
+            heading: ['Montserrat', 'Inter', 'system-ui', 'sans-serif'],
+          },
+          spacing: {
+            '18': '4.5rem',
+            '22': '5.5rem',
+            '30': '7.5rem',
+          },
+          maxWidth: {
+            '8xl': '88rem',
+            '9xl': '96rem',
+          },
+          animation: {
+            'fade-in': 'fadeIn 0.5s ease-in',
+            'fade-out': 'fadeOut 0.5s ease-out',
+            'slide-up': 'slideUp 0.5s ease-out',
+            'slide-down': 'slideDown 0.5s ease-out',
+            'slide-left': 'slideLeft 0.5s ease-out',
+            'slide-right': 'slideRight 0.5s ease-out',
+            'scale-in': 'scaleIn 0.5s ease-out',
+            'scale-out': 'scaleOut 0.5s ease-out',
+            'spin-slow': 'spin 3s linear infinite',
+            'pulse-slow': 'pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+            'bounce-slow': 'bounce 3s infinite',
+            'float': 'float 3s ease-in-out infinite',
+          },
+          keyframes: {
+            fadeIn: {
+              '0%': { opacity: '0' },
+              '100%': { opacity: '1' },
+            },
+            fadeOut: {
+              '0%': { opacity: '1' },
+              '100%': { opacity: '0' },
+            },
+            slideUp: {
+              '0%': { transform: 'translateY(20px)', opacity: '0' },
+              '100%': { transform: 'translateY(0)', opacity: '1' },
+            },
+            slideDown: {
+              '0%': { transform: 'translateY(-20px)', opacity: '0' },
+              '100%': { transform: 'translateY(0)', opacity: '1' },
+            },
+            slideLeft: {
+              '0%': { transform: 'translateX(20px)', opacity: '0' },
+              '100%': { transform: 'translateX(0)', opacity: '1' },
+            },
+            slideRight: {
+              '0%': { transform: 'translateX(-20px)', opacity: '0' },
+              '100%': { transform: 'translateX(0)', opacity: '1' },
+            },
+            scaleIn: {
+              '0%': { transform: 'scale(0.9)', opacity: '0' },
+              '100%': { transform: 'scale(1)', opacity: '1' },
+            },
+            scaleOut: {
+              '0%': { transform: 'scale(1.1)', opacity: '0' },
+              '100%': { transform: 'scale(1)', opacity: '1' },
+            },
+            float: {
+              '0%, 100%': { transform: 'translateY(0)' },
+              '50%': { transform: 'translateY(-10px)' },
+            },
+          },
+          aspectRatio: {
+            'portrait': '3/4',
+            'landscape': '4/3',
+            'ultrawide': '21/9',
+          },
+        },
+      },
+      variants: {
+        extend: {
+          opacity: ['disabled'],
+          cursor: ['disabled'],
+          backgroundColor: ['active', 'disabled'],
+          textColor: ['active', 'disabled'],
+        },
+      },
+    }
+  </script>
+
+  <!-- Utilities and Components -->
+  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/alpinejs/3.13.3/cdn.min.js"></script>
+  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/apexcharts/3.45.1/apexcharts.min.js"></script>
+
+  <!-- Optimized Font Loading -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Montserrat:wght@400;500;600;700&display=swap"
+    rel="stylesheet">
+
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- Base Styles -->
+  <style>
+    * {
+      -ms-overflow-style: none;
+      /* IE and Edge */
+      scrollbar-width: none;
+      /* Firefox */
+    }
+
+    /* Webkit browsers like Chrome, Safari, newer Edge */
+    *::-webkit-scrollbar {
+      display: none;
+      width: 0;
+      height: 0;
+    }
+
+    /* Custom scrollbar */
+    ::-webkit-scrollbar {
+      width: 0px;
+    }
+
+    ::-webkit-scrollbar-track {
+      background: #f1f1f1;
+      border-radius: 4px;
+    }
+
+    ::-webkit-scrollbar-thumb {
+      background: #888;
+      border-radius: 4px;
+    }
+
+    ::-webkit-scrollbar-thumb:hover {
+      background: #666;
+    }
+
+    /* Remove tap highlight on mobile */
+    * {
+      -webkit-tap-highlight-color: transparent;
+    }
+
+    /* Improve text rendering */
+    body {
+      text-rendering: optimizeLegibility;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+
+    /* Focus outline styles */
+    :focus-visible {
+      outline: 2px solid currentColor;
+      outline-offset: 2px;
+    }
+
+    /* Print styles */
+    @media print {
+      .no-print {
+        display: none !important;
+      }
+
+      a[href]:after {
+        content: " (" attr(href) ")";
+      }
+    }
+  </style>
+
+  <!-- Enhanced Image Handler -->
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const imageObserver = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            const img = entry.target;
+            if (img.dataset.src) {
+              const tempImage = new Image();
+              tempImage.onload = () => {
+                img.src = img.dataset.src;
+                img.classList.remove('opacity-0');
+                img.classList.add('opacity-100');
+              };
+              tempImage.src = img.dataset.src;
+              img.removeAttribute('data-src');
+              observer.unobserve(img);
+            }
+          }
+        });
+      }, {
+        rootMargin: '50px 0px',
+        threshold: 0.01
+      });
+
+      const loadImage = (img) => {
+        if ('loading' in HTMLImageElement.prototype) {
+          img.loading = 'lazy';
+        }
+
+        img.classList.add('transition-opacity', 'duration-300', 'opacity-0');
+
+        img.onerror = () => {
+          const width = img.getAttribute('width') || img.clientWidth || 300;
+          const height = img.getAttribute('height') || img.clientHeight || 200;
+          img.src = `https://placehold.co/${width}x${height}/DEDEDE/555555?text=Image+Unavailable`;
+          img.alt = 'Image unavailable';
+          img.classList.remove('opacity-0');
+          img.classList.add('opacity-100', 'error-image');
+        };
+
+        if (img.dataset.src) {
+          imageObserver.observe(img);
+        } else {
+          img.classList.remove('opacity-0');
+          img.classList.add('opacity-100');
+        }
+      };
+
+      document.querySelectorAll('img[data-src], img:not([data-src])').forEach(loadImage);
+
+      // Watch for dynamically added images
+      new MutationObserver((mutations) => {
+        mutations.forEach(mutation => {
+          mutation.addedNodes.forEach(node => {
+            if (node.nodeType === 1) {
+              if (node.tagName === 'IMG') {
+                loadImage(node);
+              }
+              node.querySelectorAll('img').forEach(loadImage);
+            }
+          });
+        });
+      }).observe(document.body, {
+        childList: true,
+        subtree: true
+      });
+    });
+
+    // Performance monitoring
+    if ('performance' in window && 'PerformanceObserver' in window) {
+      // Create performance observer
+      const observer = new PerformanceObserver((list) => {
+        const entries = list.getEntries();
+        entries.forEach((entry) => {
+          if (entry.entryType === 'largest-contentful-paint') {
+            // console.log(`LCP: ${entry.startTime}ms`);
+          }
+          if (entry.entryType === 'first-input') {
+            // console.log(`FID: ${entry.processingStart - entry.startTime}ms`);
+          }
+          if (entry.entryType === 'layout-shift') {
+            // console.log(`CLS: ${entry.value}`);
+          }
+        });
+      });
+
+      // Observe performance metrics
+      observer.observe({ entryTypes: ['largest-contentful-paint', 'first-input', 'layout-shift'] });
+
+      // Log basic performance metrics
+      window.addEventListener('load', () => {
+        const timing = performance.getEntriesByType('navigation')[0];
+        console.log({
+          'DNS Lookup': timing.domainLookupEnd - timing.domainLookupStart,
+          'TCP Connection': timing.connectEnd - timing.connectStart,
+          'DOM Content Loaded': timing.domContentLoadedEventEnd - timing.navigationStart,
+          'Page Load': timing.loadEventEnd - timing.navigationStart
+        });
+      });
+    }
+
+    // Handle offline/online status
+    window.addEventListener('online', () => {
+      document.body.classList.remove('offline');
+      console.log('Connection restored');
+    });
+
+    window.addEventListener('offline', () => {
+      document.body.classList.add('offline');
+      console.log('Connection lost');
+    });
+  </script>
+</head>
+
+<body class="antialiased text-gray-800 min-h-screen flex flex-col">
+  <!-- Skip to main content link for accessibility -->
+  <a href="#main-content"
+    class="sr-only focus:not-sr-only focus:absolute focus:top-0 focus:left-0 focus:z-50 focus:p-4 focus:bg-white focus:text-black">
+    Skip to main content
+  </a>
+
+  <!-- Header -->
+  <header class="relative z-50 bg-white dark:bg-gray-900">
+    <!-- Header content goes here -->
+  </header>
+
+  <!-- Main content area -->
+  <main id="main-content" class="flex-1 relative ">
+    <!-- Content will be injected here -->
+  </main>
+
+  <!-- {bodyScripts} -->
+
+</body>
+
+</html>
+<div>
+  <nav id="navbar" class="bg-neutral-900 fixed w-full z-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex justify-between h-16">
+        <div class="flex items-center">
+          <div class="flex-shrink-0">
+            <span class="text-white text-xl font-bold">SJMSOM</span>
+          </div>
+        </div>
+
+        <div class="hidden md:flex items-center space-x-8">
+          <a href="#eligibility" class="text-gray-300 hover:text-white transition-colors">Eligibility</a>
+          <a href="#application" class="text-gray-300 hover:text-white transition-colors">Application</a>
+          <a href="#selection" class="text-gray-300 hover:text-white transition-colors">Selection</a>
+          <a href="#dates" class="text-gray-300 hover:text-white transition-colors">Important Dates</a>
+          <a href="#curriculum" class="text-gray-300 hover:text-white transition-colors">Curriculum</a>
+          <a href="#fees" class="text-gray-300 hover:text-white transition-colors">Fees</a>
+          <a href="#faq" class="text-gray-300 hover:text-white transition-colors">FAQs</a>
+        </div>
+
+        <div class="md:hidden flex items-center">
+          <button id="menu-btn" class="text-gray-300 hover:text-white">
+            <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Mobile menu -->
+    <div id="mobile-menu" class="hidden md:hidden bg-neutral-900 animate__animated animate__fadeIn">
+      <div class="px-2 pt-2 pb-3 space-y-1">
+        <a href="#eligibility" class="block px-3 py-2 text-gray-300 hover:text-white">Eligibility</a>
+        <a href="#application" class="block px-3 py-2 text-gray-300 hover:text-white">Application</a>
+        <a href="#selection" class="block px-3 py-2 text-gray-300 hover:text-white">Selection</a>
+        <a href="#dates" class="block px-3 py-2 text-gray-300 hover:text-white">Important Dates</a>
+        <a href="#curriculum" class="block px-3 py-2 text-gray-300 hover:text-white">Curriculum</a>
+        <a href="#fees" class="block px-3 py-2 text-gray-300 hover:text-white">Fees</a>
+        <a href="#faq" class="block px-3 py-2 text-gray-300 hover:text-white">FAQs</a>
+      </div>
+    </div>
+  </nav>
+
+  <script>
+    const menuBtn = document.getElementById('menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+
+    menuBtn.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+
+    // Close mobile menu when clicking a link
+    const mobileLinks = mobileMenu.getElementsByTagName('a');
+    Array.from(mobileLinks).forEach(link => {
+      link.addEventListener('click', () => {
+        mobileMenu.classList.add('hidden');
+      });
+    });
+  </script>
+</div>
+<div>
+  <section id="hero" class="bg-neutral-900 min-h-[70vh] flex items-center pt-16">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center">
+        <h1 class="text-4xl md:text-6xl font-bold text-white mb-6 animate__animated animate__fadeInDown">
+          MBA Admissions
+          <span class="block text-2xl md:text-4xl mt-2">Shailesh J. Mehta School of Management</span>
+        </h1>
+
+        <p
+          class="text-gray-300 text-lg md:text-xl max-w-3xl mx-auto mb-8 animate__animated animate__fadeIn animate__delay-1s">
+          Transform your career with our prestigious MBA program at IIT Bombay's premier management school
+        </p>
+
+        <div
+          class="flex flex-col sm:flex-row justify-center gap-4 animate__animated animate__fadeInUp animate__delay-1s">
+          <a href="#application"
+            class="bg-blue-600 text-white px-8 py-3 rounded-lg hover:bg-blue-700 transition-colors font-semibold">
+            Apply Now
+          </a>
+          <a href="https://www.som.iitb.ac.in/wp-content/uploads/2025/01/MBA_Brochure_2025.pdf"
+            class="bg-transparent border-2 border-white text-white px-8 py-3 rounded-lg hover:bg-white hover:text-neutral-900 transition-colors font-semibold">
+            Get Brochure
+          </a>
+        </div>
+
+        <div
+          class="mt-12 grid grid-cols-2 md:grid-cols-4 gap-6 text-center animate__animated animate__fadeIn animate__delay-2s">
+          <div class="p-4">
+            <div class="text-3xl font-bold text-blue-500 mb-2">35+</div>
+            <div class="text-gray-400">Years of Excellence</div>
+          </div>
+          <div class="p-4">
+            <div class="text-3xl font-bold text-blue-500 mb-2">100%</div>
+            <div class="text-gray-400">Placement Record</div>
+          </div>
+          <div class="p-4">
+            <div class="text-3xl font-bold text-blue-500 mb-2">120+</div>
+            <div class="text-gray-400">Companies Visiting</div>
+          </div>
+          <div class="p-4">
+            <div class="text-3xl font-bold text-blue-500 mb-2">#1</div>
+            <div class="text-gray-400">Among IIT B-Schools</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+
+<div>
+  <section id="eligibility" class="bg-white py-20">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-12 animate__animated animate__fadeIn">
+        <h2 class="text-3xl md:text-4xl font-bold text-neutral-900 mb-4">Eligibility Criteria</h2>
+        <p class="text-gray-600">Check if you meet our program requirements</p>
+      </div>
+
+      <div class="grid md:grid-cols-2 gap-8">
+        <div class="bg-neutral-50 p-6 rounded-lg shadow-sm animate__animated animate__fadeInLeft">
+          <h3 class="text-xl font-semibold text-neutral-900 mb-4">Academic Requirements</h3>
+          <ul class="space-y-3 text-gray-600">
+            <li class="flex items-start">
+              <svg class="h-6 w-6 text-green-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+              </svg>
+              Bachelor degree with at least 60% marks 
+            </li>
+            <li class="flex items-start">
+              <svg class="h-6 w-6 text-green-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+              </svg>
+              Valid CAT/GMAT/GRE score
+            </li>
+            <li class="flex items-start">
+              <svg class="h-6 w-6 text-green-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+              </svg>
+              Final year students can apply with latest available marks
+            </li>
+          </ul>
+        </div>
+
+        <div class="bg-neutral-50 p-6 rounded-lg shadow-sm animate__animated animate__fadeInRight">
+          <h3 class="text-xl font-semibold text-neutral-900 mb-4">Work Experience</h3>
+          <ul class="space-y-3 text-gray-600">
+            <li class="flex items-start">
+              <svg class="h-6 w-6 text-green-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+              </svg>
+              Work experience is not mandatory but preferred
+            </li>
+            <li class="flex items-start">
+              <svg class="h-6 w-6 text-green-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+              </svg>
+              Internships and projects are considered valuable
+            </li>
+            <li class="flex items-start">
+              <svg class="h-6 w-6 text-green-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+              </svg>
+              Quality of experience is given more weightage than duration
+            </li>
+          </ul>
+        </div>
+
+        <div class="bg-neutral-50 p-6 rounded-lg shadow-sm animate__animated animate__fadeInLeft animate__delay-1s">
+          <h3 class="text-xl font-semibold text-neutral-900 mb-4">International Students</h3>
+          <ul class="space-y-3 text-gray-600">
+            <li class="flex items-start">
+              <svg class="h-6 w-6 text-green-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+              </svg>
+              TOEFL/IELTS score required
+            </li>
+            <li class="flex items-start">
+              <svg class="h-6 w-6 text-green-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+              </svg>
+              Equivalent degree certification needed
+            </li>
+            <li class="flex items-start">
+              <svg class="h-6 w-6 text-green-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+              </svg>
+              Valid passport and visa requirements
+            </li>
+          </ul>
+        </div>
+
+        <div class="bg-neutral-50 p-6 rounded-lg shadow-sm animate__animated animate__fadeInRight animate__delay-1s">
+          <h3 class="text-xl font-semibold text-neutral-900 mb-4">Additional Requirements</h3>
+          <ul class="space-y-3 text-gray-600">
+            <li class="flex items-start">
+              <svg class="h-6 w-6 text-green-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+              </svg>
+              Statement of Purpose (SOP)
+            </li>
+            <li class="flex items-start">
+              <svg class="h-6 w-6 text-green-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+              </svg>
+              Two letters of recommendation
+            </li>
+            <li class="flex items-start">
+              <svg class="h-6 w-6 text-green-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+              </svg>
+              Updated resume/CV
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+
+<div>
+  <section id="application" class="bg-neutral-50 py-20">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-12 animate__animated animate__fadeIn">
+        <h2 class="text-3xl md:text-4xl font-bold text-neutral-900 mb-4">Application Process</h2>
+        <p class="text-gray-600">Choose your application category and follow the steps</p>
+      </div>
+
+      <div class="grid md:grid-cols-2 gap-8">
+        <div class="bg-white rounded-xl shadow-md overflow-hidden animate__animated animate__fadeInLeft">
+          <div class="bg-blue-600 p-4">
+            <h3 class="text-xl font-semibold text-white">Domestic Applicants</h3>
+          </div>
+          <div class="p-6">
+            <ol class="space-y-4">
+              <li class="flex items-start">
+                <span
+                  class="flex items-center justify-center w-8 h-8 rounded-full bg-blue-100 text-blue-600 font-semibold mr-3">1</span>
+                <div>
+                  <h4 class="font-semibold text-neutral-900">Register Online</h4>
+                  <p class="text-gray-600 mt-1">Create an account on our admission portal</p>
+                </div>
+              </li>
+              <li class="flex items-start">
+                <span
+                  class="flex items-center justify-center w-8 h-8 rounded-full bg-blue-100 text-blue-600 font-semibold mr-3">2</span>
+                <div>
+                  <h4 class="font-semibold text-neutral-900">Fill Application Form</h4>
+                  <p class="text-gray-600 mt-1">Complete all required fields and upload documents</p>
+                </div>
+              </li>
+              <li class="flex items-start">
+                <span
+                  class="flex items-center justify-center w-8 h-8 rounded-full bg-blue-100 text-blue-600 font-semibold mr-3">3</span>
+                <div>
+                  <h4 class="font-semibold text-neutral-900">Pay Application Fee</h4>
+                  <p class="text-gray-600 mt-1">₹2000 for General/OBC, ₹1000 for SC/ST/PwD</p>
+                </div>
+              </li>
+            </ol>
+            <button class="w-full mt-6 bg-blue-600 text-white py-3 rounded-lg hover:bg-blue-700 transition-colors" onclick="window.location.href='https://portal.iitb.ac.in/CRP/?appid=9&register=true';">
+              Apply as Domestic Student
+            </button>
+          </div>
+        </div>
+
+        <div class="bg-white rounded-xl shadow-md overflow-hidden animate__animated animate__fadeInRight">
+          <div class="bg-green-600 p-4">
+            <h3 class="text-xl font-semibold text-white">International Applicants</h3>
+          </div>
+          <div class="p-6">
+            <ol class="space-y-4">
+              <li class="flex items-start">
+                <span
+                  class="flex items-center justify-center w-8 h-8 rounded-full bg-green-100 text-green-600 font-semibold mr-3">1</span>
+                <div>
+                  <h4 class="font-semibold text-neutral-900">International Registration</h4>
+                  <p class="text-gray-600 mt-1">Register through international admission portal</p>
+                </div>
+              </li>
+              <li class="flex items-start">
+                <span
+                  class="flex items-center justify-center w-8 h-8 rounded-full bg-green-100 text-green-600 font-semibold mr-3">2</span>
+                <div>
+                  <h4 class="font-semibold text-neutral-900">Document Submission</h4>
+                  <p class="text-gray-600 mt-1">Submit academic credentials and English proficiency scores</p>
+                </div>
+              </li>
+              <li class="flex items-start">
+                <span
+                  class="flex items-center justify-center w-8 h-8 rounded-full bg-green-100 text-green-600 font-semibold mr-3">3</span>
+                <div>
+                  <h4 class="font-semibold text-neutral-900">Pay Application Fee</h4>
+                  <p class="text-gray-600 mt-1">USD 100 or equivalent</p>
+                </div>
+              </li>
+            </ol>
+            <button class="w-full mt-6 bg-green-600 text-white py-3 rounded-lg hover:bg-green-700 transition-colors" onclick="window.location.href='https://portal.iitb.ac.in/intadm/login';">
+              Apply as International Student
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="mt-12 bg-white p-6 rounded-xl shadow-md animate__animated animate__fadeInUp">
+        <h3 class="text-xl font-semibold text-neutral-900 mb-4">Required Documents</h3>
+        <div class="grid md:grid-cols-2 gap-4">
+          <ul class="space-y-2 text-gray-600">
+            <li class="flex items-center">
+              <svg class="h-5 w-5 text-green-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+              </svg>
+              Academic Transcripts
+            </li>
+            <li class="flex items-center">
+              <svg class="h-5 w-5 text-green-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+              </svg>
+              CAT/GMAT/GRE Score Card
+            </li>
+            <li class="flex items-center">
+              <svg class="h-5 w-5 text-green-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+              </svg>
+              Statement of Purpose
+            </li>
+          </ul>
+          <ul class="space-y-2 text-gray-600">
+            <li class="flex items-center">
+              <svg class="h-5 w-5 text-green-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+              </svg>
+              Two Recommendation Letters
+            </li>
+            <li class="flex items-center">
+              <svg class="h-5 w-5 text-green-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+              </svg>
+              Updated Resume/CV
+            </li>
+            <li class="flex items-center">
+              <svg class="h-5 w-5 text-green-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+              </svg>
+              Passport Size Photograph
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+
+<div>
+  <section id="selection" class="bg-white py-20">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8" id="el-msa56uh2">
+      <div class="text-center mb-12" data-aos="fade-in">
+        <h2 class="text-3xl md:text-4xl font-bold text-neutral-900 mb-4">Selection Process</h2>
+        <p class="text-gray-600">Our comprehensive evaluation process ensures we select the best candidates</p>
+      </div>
+
+      <div class="relative wrap overflow-hidden p-10 h-full">
+        <div class="border-2-2 absolute border-opacity-20 border-gray-700 h-full border" style="left: 50%"></div>
+        <!-- right timeline -->
+        <div class="mb-8 flex justify-between items-center w-full right-timeline">
+          <div class="order-1 w-5/12"></div>
+          <div class="z-20 flex items-center order-1 bg-gray-800 shadow-xl w-8 h-8 rounded-full">
+            <h1 class="mx-auto text-white font-bold text-lg text-white">1</h1>
+          </div>
+          <div class="order-1 bg-green-600 rounded-lg shadow-xl w-5/12 px-6 py-4">
+            <h3 class="mb-3 font-bold text-white text-xl">Document Screening</h3>
+            <p class="text-sm leading-snug tracking-wide text-white text-opacity-100">Initial evaluation of academic records, test scores, and required documents</p>
+          </div>
+        </div>
+    
+        <!-- left timeline -->
+        <div class="mb-8 flex justify-between flex-row-reverse items-center w-full left-timeline">
+          <div class="order-1 w-5/12"></div>
+          <div class="z-20 flex items-center order-1 bg-gray-800 shadow-xl w-8 h-8 rounded-full">
+            <h1 class="mx-auto text-white text-white font-bold text-lg">2</h1>
+          </div>
+          <div class="order-1 bg-blue-600 rounded-lg shadow-xl w-5/12 px-6 py-4">
+            <h3 class="mb-3 font-bold text-white text-xl">Shortlisting</h3>
+            <p class="text-sm font-medium leading-snug tracking-wide text-white text-opacity-100">Candidates are shortlisted based on academic performance and CAT/GMAT/GRE scores</p>
+          </div>
+        </div>
+        
+        <!-- right timeline -->
+        <div class="mb-8 flex justify-between items-center w-full right-timeline">
+          <div class="order-1 w-5/12"></div>
+          <div class="z-20 flex items-center order-1 bg-gray-800 shadow-xl w-8 h-8 rounded-full">
+            <h1 class="mx-auto text-white font-bold text-lg text-white">3</h1>
+          </div>
+          <div class="order-1 bg-green-600 rounded-lg shadow-xl w-5/12 px-6 py-4">
+            <h3 class="mb-3 font-bold text-white text-xl">Written Ability Test</h3>
+            <p class="text-sm leading-snug tracking-wide text-white text-opacity-100">Assessment of written communication and analytical skills</p>
+          </div>
+        </div>
+    
+        <!-- left timeline -->
+        <div class="mb-8 flex justify-between flex-row-reverse items-center w-full left-timeline">
+          <div class="order-1 w-5/12"></div>
+          <div class="z-20 flex items-center order-1 bg-gray-800 shadow-xl w-8 h-8 rounded-full">
+            <h1 class="mx-auto text-white text-white font-bold text-lg">4</h1>
+          </div>
+          <div class="order-1 bg-blue-600 rounded-lg shadow-xl w-5/12 px-6 py-4">
+            <h3 class="mb-3 font-bold text-white text-xl">Group Discussion</h3>
+            <p class="text-sm font-medium leading-snug tracking-wide text-white text-opacity-100">Evaluation of interpersonal skills and team dynamics</p>
+          </div>
+        </div>
+
+          <!-- right timeline -->
+        <div class="mb-8 flex justify-between items-center w-full right-timeline">
+          <div class="order-1 w-5/12"></div>
+          <div class="z-20 flex items-center order-1 bg-gray-800 shadow-xl w-8 h-8 rounded-full">
+            <h1 class="mx-auto text-white font-bold text-lg text-white">5</h1>
+          </div>
+          <div class="order-1 bg-green-600 rounded-lg shadow-xl w-5/12 px-6 py-4">
+            <h3 class="mb-3 font-bold text-white text-xl">Personal Interview</h3>
+            <p class="text-sm leading-snug tracking-wide text-white text-opacity-100">In-depth discussion on various aspects including academics, work experience, and career goals</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="mt-16 bg-neutral-50 p-6 rounded-xl shadow-sm" data-aos="fade-up">
+        <h3 class="text-xl font-semibold text-neutral-900 mb-4">Selection Weightage</h3>
+        <div class="grid md:grid-cols-4 gap-4 text-center">
+          <div class="bg-white p-4 rounded-lg">
+            <div class="text-2xl font-bold text-blue-600">40%</div>
+            <div class="text-gray-600 mt-2">Academic Profile</div>
+          </div>
+          <div class="bg-white p-4 rounded-lg">
+            <div class="text-2xl font-bold text-blue-600">20%</div>
+            <div class="text-gray-600 mt-2">Written Test</div>
+          </div>
+          <div class="bg-white p-4 rounded-lg">
+            <div class="text-2xl font-bold text-blue-600">15%</div>
+            <div class="text-gray-600 mt-2">Group Discussion</div>
+          </div>
+          <div class="bg-white p-4 rounded-lg">
+            <div class="text-2xl font-bold text-blue-600">25%</div>
+            <div class="text-gray-600 mt-2">Personal Interview</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+<div>
+  <section id="dates" class="bg-neutral-50 py-20">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-12 animate__animated animate__fadeIn">
+        <h2 class="text-3xl md:text-4xl font-bold text-neutral-900 mb-4">Important Dates</h2>
+        <p class="text-gray-600">Mark your calendar for these crucial deadlines</p>
+      </div>
+
+      <div class="grid md:grid-cols-2 gap-8">
+        <div class="bg-white rounded-xl shadow-md overflow-hidden animate__animated animate__fadeInLeft">
+          <div class="bg-blue-600 p-4">
+            <h3 class="text-xl font-semibold text-white">Round 1 Admissions</h3>
+          </div>
+          <div class="p-6 space-y-4">
+            <div class="flex justify-between items-center p-3 bg-blue-50 rounded-lg">
+              <div>
+                <h4 class="font-semibold text-neutral-900">Application Opens</h4>
+                <p class="text-gray-600">Online Portal Access Begins</p>
+              </div>
+              <div class="text-right">
+                <span class="text-blue-600 font-semibold">September 1, 2024</span>
+              </div>
+            </div>
+            <div class="flex justify-between items-center p-3 bg-blue-50 rounded-lg">
+              <div>
+                <h4 class="font-semibold text-neutral-900">Application Deadline</h4>
+                <p class="text-gray-600">Last Date for Submission</p>
+              </div>
+              <div class="text-right">
+                <span class="text-blue-600 font-semibold">October 15, 2024</span>
+              </div>
+            </div>
+            <div class="flex justify-between items-center p-3 bg-blue-50 rounded-lg">
+              <div>
+                <h4 class="font-semibold text-neutral-900">Interview Process</h4>
+                <p class="text-gray-600">GD and PI Rounds</p>
+              </div>
+              <div class="text-right">
+                <span class="text-blue-600 font-semibold">November 1-15, 2024</span>
+              </div>
+            </div>
+            <div class="flex justify-between items-center p-3 bg-blue-50 rounded-lg">
+              <div>
+                <h4 class="font-semibold text-neutral-900">Results Declaration</h4>
+                <p class="text-gray-600">First List Announcement</p>
+              </div>
+              <div class="text-right">
+                <span class="text-blue-600 font-semibold">December 1, 2024</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="bg-white rounded-xl shadow-md overflow-hidden animate__animated animate__fadeInRight">
+          <div class="bg-green-600 p-4">
+            <h3 class="text-xl font-semibold text-white">Round 2 Admissions</h3>
+          </div>
+          <div class="p-6 space-y-4">
+            <div class="flex justify-between items-center p-3 bg-green-50 rounded-lg">
+              <div>
+                <h4 class="font-semibold text-neutral-900">Application Opens</h4>
+                <p class="text-gray-600">Second Round Begins</p>
+              </div>
+              <div class="text-right">
+                <span class="text-green-600 font-semibold">January 1, 2025</span>
+              </div>
+            </div>
+            <div class="flex justify-between items-center p-3 bg-green-50 rounded-lg">
+              <div>
+                <h4 class="font-semibold text-neutral-900">Application Deadline</h4>
+                <p class="text-gray-600">Final Submission Date</p>
+              </div>
+              <div class="text-right">
+                <span class="text-green-600 font-semibold">February 15, 2025</span>
+              </div>
+            </div>
+            <div class="flex justify-between items-center p-3 bg-green-50 rounded-lg">
+              <div>
+                <h4 class="font-semibold text-neutral-900">Interview Process</h4>
+                <p class="text-gray-600">GD and PI Rounds</p>
+              </div>
+              <div class="text-right">
+                <span class="text-green-600 font-semibold">March 1-15, 2025</span>
+              </div>
+            </div>
+            <div class="flex justify-between items-center p-3 bg-green-50 rounded-lg">
+              <div>
+                <h4 class="font-semibold text-neutral-900">Results Declaration</h4>
+                <p class="text-gray-600">Final List Announcement</p>
+              </div>
+              <div class="text-right">
+                <span class="text-green-600 font-semibold">April 1, 2025</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="mt-12 bg-white p-6 rounded-xl shadow-md animate__animated animate__fadeInUp">
+        <div class="flex items-center justify-between mb-4">
+          <h3 class="text-xl font-semibold text-neutral-900">Program Commencement</h3>
+          <span class="text-blue-600 font-semibold">July 2025</span>
+        </div>
+        <p class="text-gray-600">
+          Note: All dates are tentative and subject to change. Candidates are advised to regularly check the
+          official website for any updates.
+        </p>
+      </div>
+    </div>
+  </section>
+</div>
+<div>
+  <section id="curriculum" class="bg-white py-20">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-12 animate__animated animate__fadeIn">
+        <h2 class="text-3xl md:text-4xl font-bold text-neutral-900 mb-4">MBA Curriculum</h2>
+        <p class="text-gray-600">A comprehensive two-year program designed for future leaders</p>
+      </div>
+
+      <div class="grid md:grid-cols-2 gap-8 mb-12">
+        <div class="bg-neutral-50 rounded-xl p-6 shadow-sm animate__animated animate__fadeInLeft">
+          <h3 class="text-2xl font-bold text-neutral-900 mb-6">Year 1</h3>
+
+          <div class="space-y-6">
+            <div>
+              <h4 class="text-lg font-semibold text-blue-600 mb-3">Term 1 (June - September)</h4>
+              <ul class="space-y-2 text-gray-600">
+                <li class="flex items-center">
+                  <svg class="h-5 w-5 text-blue-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                  </svg>
+                  Financial Accounting
+                </li>
+                <li class="flex items-center">
+                  <svg class="h-5 w-5 text-blue-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                  </svg>
+                  Marketing Management
+                </li>
+                <li class="flex items-center">
+                  <svg class="h-5 w-5 text-blue-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                  </svg>
+                  Organizational Behavior
+                </li>
+              </ul>
+            </div>
+
+            <div>
+              <h4 class="text-lg font-semibold text-blue-600 mb-3">Term 2 (October - December)</h4>
+              <ul class="space-y-2 text-gray-600">
+                <li class="flex items-center">
+                  <svg class="h-5 w-5 text-blue-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                  </svg>
+                  Operations Management
+                </li>
+                <li class="flex items-center">
+                  <svg class="h-5 w-5 text-blue-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                  </svg>
+                  Business Analytics
+                </li>
+                <li class="flex items-center">
+                  <svg class="h-5 w-5 text-blue-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                  </svg>
+                  Economics for Management
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="bg-neutral-50 rounded-xl p-6 shadow-sm animate__animated animate__fadeInRight">
+          <h3 class="text-2xl font-bold text-neutral-900 mb-6">Year 2</h3>
+
+          <div class="space-y-6">
+            <div>
+              <h4 class="text-lg font-semibold text-green-600 mb-3">Term 3 (January - March)</h4>
+              <ul class="space-y-2 text-gray-600">
+                <li class="flex items-center">
+                  <svg class="h-5 w-5 text-green-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                  </svg>
+                  Strategic Management
+                </li>
+                <li class="flex items-center">
+                  <svg class="h-5 w-5 text-green-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                  </svg>
+                  Corporate Finance
+                </li>
+                <li class="flex items-center">
+                  <svg class="h-5 w-5 text-green-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                  </svg>
+                  Elective Courses
+                </li>
+              </ul>
+            </div>
+
+            <div>
+              <h4 class="text-lg font-semibold text-green-600 mb-3">Term 4 (April - June)</h4>
+              <ul class="space-y-2 text-gray-600">
+                <li class="flex items-center">
+                  <svg class="h-5 w-5 text-green-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                  </svg>
+                  Specialization Courses
+                </li>
+                <li class="flex items-center">
+                  <svg class="h-5 w-5 text-green-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                  </svg>
+                  Industry Project
+                </li>
+                <li class="flex items-center">
+                  <svg class="h-5 w-5 text-green-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                  </svg>
+                  Capstone Course
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="grid md:grid-cols-3 gap-6 animate__animated animate__fadeInUp">
+        <div class="bg-blue-50 p-6 rounded-xl">
+          <h4 class="text-xl font-semibold text-neutral-900 mb-3">Specializations</h4>
+          <ul class="space-y-2 text-gray-600">
+            <li>Finance</li>
+            <li>Marketing</li>
+            <li>Operations</li>
+            <li>HR Management</li>
+          </ul>
+        </div>
+
+        <div class="bg-green-50 p-6 rounded-xl">
+          <h4 class="text-xl font-semibold text-neutral-900 mb-3">Learning Methods</h4>
+          <ul class="space-y-2 text-gray-600">
+            <li>Case Studies</li>
+            <li>Live Projects</li>
+            <li>Industry Visits</li>
+            <li>Guest Lectures</li>
+          </ul>
+        </div>
+
+        <div class="bg-yellow-50 p-6 rounded-xl">
+          <h4 class="text-xl font-semibold text-neutral-900 mb-3">Additional Activities</h4>
+          <ul class="space-y-2 text-gray-600">
+            <li>International Immersion</li>
+            <li>Leadership Workshop</li>
+            <li>Business Simulation</li>
+            <li>Research Projects</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+<div>
+  <section id="fees" class="bg-neutral-50 py-20">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-12 animate__animated animate__fadeIn">
+        <h2 class="text-3xl md:text-4xl font-bold text-neutral-900 mb-4">Fee Structure</h2>
+        <p class="text-gray-600">Comprehensive breakdown of program fees for 2024-26 batch</p>
+      </div>
+
+      <div class="grid md:grid-cols-2 gap-8 mb-12">
+        <div class="bg-white rounded-xl shadow-md overflow-hidden animate__animated animate__fadeInLeft">
+          <div class="bg-blue-600 p-4">
+            <h3 class="text-xl font-semibold text-white">Domestic Students</h3>
+          </div>
+          <div class="p-6">
+            <div class="space-y-4">
+              <div class="flex justify-between items-center p-3 bg-blue-50 rounded-lg">
+                <span class="text-gray-700">Tuition Fee</span>
+                <span class="font-semibold text-neutral-900">₹10,00,000</span>
+              </div>
+              <div class="flex justify-between items-center p-3 bg-blue-50 rounded-lg">
+                <span class="text-gray-700">Development Fee</span>
+                <span class="font-semibold text-neutral-900">₹1,50,000</span>
+              </div>
+              <div class="flex justify-between items-center p-3 bg-blue-50 rounded-lg">
+                <span class="text-gray-700">Hostel & Mess Fee</span>
+                <span class="font-semibold text-neutral-900">₹2,00,000</span>
+              </div>
+              <div class="flex justify-between items-center p-3 bg-blue-50 rounded-lg">
+                <span class="text-gray-700">Student Activities</span>
+                <span class="font-semibold text-neutral-900">₹50,000</span>
+              </div>
+              <div class="flex justify-between items-center p-4 bg-blue-100 rounded-lg">
+                <span class="font-semibold text-neutral-900">Total Fee</span>
+                <span class="font-bold text-blue-600">₹14,00,000</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="bg-white rounded-xl shadow-md overflow-hidden animate__animated animate__fadeInRight">
+          <div class="bg-green-600 p-4">
+            <h3 class="text-xl font-semibold text-white">International Students</h3>
+          </div>
+          <div class="p-6">
+            <div class="space-y-4">
+              <div class="flex justify-between items-center p-3 bg-green-50 rounded-lg">
+                <span class="text-gray-700">Tuition Fee</span>
+                <span class="font-semibold text-neutral-900">$25,000</span>
+              </div>
+              <div class="flex justify-between items-center p-3 bg-green-50 rounded-lg">
+                <span class="text-gray-700">Development Fee</span>
+                <span class="font-semibold text-neutral-900">$3,000</span>
+              </div>
+              <div class="flex justify-between items-center p-3 bg-green-50 rounded-lg">
+                <span class="text-gray-700">Hostel & Mess Fee</span>
+                <span class="font-semibold text-neutral-900">$4,000</span>
+              </div>
+              <div class="flex justify-between items-center p-3 bg-green-50 rounded-lg">
+                <span class="text-gray-700">Student Activities</span>
+                <span class="font-semibold text-neutral-900">$1,000</span>
+              </div>
+              <div class="flex justify-between items-center p-4 bg-green-100 rounded-lg">
+                <span class="font-semibold text-neutral-900">Total Fee</span>
+                <span class="font-bold text-green-600">$33,000</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="grid md:grid-cols-2 gap-8 animate__animated animate__fadeInUp">
+        <div class="bg-white p-6 rounded-xl shadow-md">
+          <h3 class="text-xl font-semibold text-neutral-900 mb-4">Payment Schedule</h3>
+          <div class="space-y-3">
+            <div class="flex justify-between items-center p-3 bg-neutral-50 rounded-lg">
+              <span class="text-gray-700">Registration Fee</span>
+              <span class="font-semibold text-neutral-900">At admission</span>
+            </div>
+            <div class="flex justify-between items-center p-3 bg-neutral-50 rounded-lg">
+              <span class="text-gray-700">First Installment</span>
+              <span class="font-semibold text-neutral-900">July 2024</span>
+            </div>
+            <div class="flex justify-between items-center p-3 bg-neutral-50 rounded-lg">
+              <span class="text-gray-700">Second Installment</span>
+              <span class="font-semibold text-neutral-900">December 2024</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="bg-white p-6 rounded-xl shadow-md">
+          <h3 class="text-xl font-semibold text-neutral-900 mb-4">Additional Information</h3>
+          <ul class="space-y-3 text-gray-600">
+            <li class="flex items-start">
+              <svg class="h-6 w-6 text-blue-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+              </svg>
+              Fees can be paid through DD/NEFT/Online Payment
+            </li>
+            <li class="flex items-start">
+              <svg class="h-6 w-6 text-blue-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+              </svg>
+              Education loans available from partner banks
+            </li>
+            <li class="flex items-start">
+              <svg class="h-6 w-6 text-blue-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+              </svg>
+              Merit scholarships available for top performers
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+<div>
+  <section id="faq" class="bg-white py-20">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-12 animate__animated animate__fadeIn">
+        <h2 class="text-3xl md:text-4xl font-bold text-neutral-900 mb-4">Frequently Asked Questions</h2>
+        <p class="text-gray-600">Find answers to common queries about our MBA program</p>
+      </div>
+
+      <div class="max-w-3xl mx-auto space-y-4">
+        <div class="bg-neutral-50 rounded-lg animate__animated animate__fadeInUp">
+          <button class="faq-btn w-full px-6 py-4 text-left flex justify-between items-center">
+            <span class="text-lg font-semibold text-neutral-900">What is the minimum eligibility criteria?</span>
+            <svg class="w-6 h-6 transform transition-transform duration-200" fill="none" stroke="currentColor"
+              viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+            </svg>
+          </button>
+          <div class="faq-answer hidden px-6 pb-4 text-gray-600">
+            Bachelor degree with at least 60% marks (55% in case of candidates belonging to SC/ST/PWD category) or a minimum CPI of 6.5 (6 in case of candidates belonging to SC/ST/PWD category) out of 10, along with a valid
+            CAT/GMAT/GRE score.
+          </div>
+        </div>
+
+        <div class="bg-neutral-50 rounded-lg animate__animated animate__fadeInUp">
+          <button class="faq-btn w-full px-6 py-4 text-left flex justify-between items-center">
+            <span class="text-lg font-semibold text-neutral-900">Is work experience mandatory?</span>
+            <svg class="w-6 h-6 transform transition-transform duration-200" fill="none" stroke="currentColor"
+              viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+            </svg>
+          </button>
+          <div class="faq-answer hidden px-6 pb-4 text-gray-600">
+            Work experience is not mandatory but preferred. Fresh graduates can also apply for the program.
+          </div>
+        </div>
+
+        <div class="bg-neutral-50 rounded-lg animate__animated animate__fadeInUp">
+          <button class="faq-btn w-full px-6 py-4 text-left flex justify-between items-center">
+            <span class="text-lg font-semibold text-neutral-900">What are the payment options available?</span>
+            <svg class="w-6 h-6 transform transition-transform duration-200" fill="none" stroke="currentColor"
+              viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+            </svg>
+          </button>
+          <div class="faq-answer hidden px-6 pb-4 text-gray-600">
+            Fees can be paid through DD/NEFT/Online Payment. Education loans are available from partner banks, and
+            merit scholarships are offered to top performers.
+          </div>
+        </div>
+
+        <div class="bg-neutral-50 rounded-lg animate__animated animate__fadeInUp">
+          <button class="faq-btn w-full px-6 py-4 text-left flex justify-between items-center">
+            <span class="text-lg font-semibold text-neutral-900">Is hostel accommodation mandatory?</span>
+            <svg class="w-6 h-6 transform transition-transform duration-200" fill="none" stroke="currentColor"
+              viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+            </svg>
+          </button>
+          <div class="faq-answer hidden px-6 pb-4 text-gray-600">
+            Yes, the MBA program is fully residential, and hostel accommodation is mandatory for all students.
+          </div>
+        </div>
+
+        <div class="bg-neutral-50 rounded-lg animate__animated animate__fadeInUp">
+          <button class="faq-btn w-full px-6 py-4 text-left flex justify-between items-center">
+            <span class="text-lg font-semibold text-neutral-900">What is the selection process?</span>
+            <svg class="w-6 h-6 transform transition-transform duration-200" fill="none" stroke="currentColor"
+              viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+            </svg>
+          </button>
+          <div class="faq-answer hidden px-6 pb-4 text-gray-600">
+            The selection process includes document screening, written ability test, group discussion, and personal
+            interview rounds.
+          </div>
+        </div>
+      </div>
+
+      <div class="mt-12 text-center animate__animated animate__fadeIn">
+        <p class="text-gray-600 mb-4">Still have questions?</p>
+        <a href="mailto:admissions@sjmsom.in" class="inline-flex items-center text-blue-600 hover:text-blue-700">
+          <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+          </svg>
+          Contact Admissions Office
+        </a>
+      </div>
+    </div>
+
+    <script>
+      document.querySelectorAll('.faq-btn').forEach(button => {
+        button.addEventListener('click', () => {
+          const answer = button.nextElementSibling;
+          const icon = button.querySelector('svg');
+
+          answer.classList.toggle('hidden');
+          icon.classList.toggle('rotate-180');
+
+          // Close other answers
+          document.querySelectorAll('.faq-answer').forEach(item => {
+            if (item !== answer) {
+              item.classList.add('hidden');
+              item.previousElementSibling.querySelector('svg').classList.remove('rotate-180');
+            }
+          });
+        });
+      });
+    </script>
+  </section>
+</div>
+<div>
+  <footer id="footer" class="bg-neutral-900 text-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+        <div class="animate__animated animate__fadeIn">
+          <h3 class="text-xl font-bold mb-4">SJMSOM</h3>
+          <p class="text-gray-400 text-sm">
+            Shailesh J. Mehta School of Management<br />
+            IIT Bombay, Powai<br />
+            Mumbai - 400076<br />
+            Maharashtra, India
+          </p>
+        </div>
+
+        <div class="animate__animated animate__fadeIn">
+          <h4 class="text-lg font-semibold mb-4">Quick Links</h4>
+          <ul class="space-y-2 text-gray-400">
+            <li><a href="#eligibility" class="hover:text-white transition-colors">Eligibility</a></li>
+            <li><a href="#application" class="hover:text-white transition-colors">Application</a></li>
+            <li><a href="#selection" class="hover:text-white transition-colors">Selection Process</a></li>
+            <li><a href="#dates" class="hover:text-white transition-colors">Important Dates</a></li>
+          </ul>
+        </div>
+
+        <div class="animate__animated animate__fadeIn">
+          <h4 class="text-lg font-semibold mb-4">Resources</h4>
+          <ul class="space-y-2 text-gray-400">
+            <li><a href="#curriculum" class="hover:text-white transition-colors">MBA Curriculum</a></li>
+            <li><a href="#fees" class="hover:text-white transition-colors">Fee Structure</a></li>
+            <li><a href="#faq" class="hover:text-white transition-colors">FAQs</a></li>
+            <li><a href="#" class="hover:text-white transition-colors">Admission Brochure</a></li>
+          </ul>
+        </div>
+
+        <div class="animate__animated animate__fadeIn">
+          <h4 class="text-lg font-semibold mb-4">Contact Us</h4>
+          <ul class="space-y-2 text-gray-400">
+            <li class="flex items-center">
+              <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+              </svg>
+              admissions@sjmsom.in
+            </li>
+            <li class="flex items-center">
+              <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+              </svg>
+              +91-22-2576-7781
+            </li>
+          </ul>
+
+          <div class="mt-6">
+            <h4 class="text-lg font-semibold mb-4">Follow Us</h4>
+            <div class="flex space-x-4">
+              <a href="#" class="text-gray-400 hover:text-white transition-colors">
+                <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                  <path
+                    d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z" />
+                </svg>
+              </a>
+              <a href="#" class="text-gray-400 hover:text-white transition-colors">
+                <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                  <path
+                    d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84" />
+                </svg>
+              </a>
+              <a href="#" class="text-gray-400 hover:text-white transition-colors">
+                <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                  <path
+                    d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="border-t border-gray-800 mt-12 pt-8 text-center text-gray-400 text-sm animate__animated animate__fadeIn">
+        <p>&copy; 2025 Shailesh J. Mehta School of Management. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+</div>
+
+<div id="page_complete">
+  <script>
+    console.log('Page complete');
+  </script>
+  </body>
+
+  </html>
